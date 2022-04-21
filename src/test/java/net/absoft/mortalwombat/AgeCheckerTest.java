@@ -5,10 +5,9 @@ import org.testng.annotations.Test;
 
 public class AgeCheckerTest {
 
-  @Test
-  public void testAgedUserCanPlay() {
-    AgeChecker ageChecker = new AgeChecker();
-    Assert.assertTrue(ageChecker.canPlayGame(19), "Aged user can play game");
-    Assert.assertTrue(ageChecker.testThatTooYongUsersCanNotPlay(16), "Aged user can't play game");
-  }
+    @Test
+    public void testAgedUserCanPlay() {
+        AgeChecker ageChecker = new AgeChecker();
+        Assert.assertTrue(ageChecker.canPlayGame(19), "Aged user can  not play game");
+    }
 }
